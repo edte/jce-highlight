@@ -74,7 +74,7 @@ syntax match	jceInclude	display "^\s*\(%:\|#\)\s*include\>\s*["<]" contains=jceI
 syntax region  jceString   start=/"/ skip=/\\"/ end=/"/
 
 syntax match jceError "unsigned"
-syntax match jceType  "unsigned int"
+syntax match jceType  "unsigned \%(int\|long\|short\)"
 
 highlight default link jceTodo         Todo
 highlight default link jceBug          Error

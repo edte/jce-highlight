@@ -48,7 +48,7 @@ endfunction
 
 function! SyntaxCheckers_jce_jce2cpp_GetLocList() dict
     let makeprg = self.makeprgBuild({
-        \ 'args': '--pdu'})
+        \ 'args': '--pdu --dir=/tmp'})
 
     let errorformat =
                 \ '%f: %l: %trror: %m'
